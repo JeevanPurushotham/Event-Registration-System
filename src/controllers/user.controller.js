@@ -1,6 +1,6 @@
 const { getUsers ,create,getUserByUserIds ,updateUsers,deleteUser} = require("../service/user.service");
 // const bcrypt = require('bcryptjs');
-const{genSaltSync,hashSync,compareSync}=require("bcrypt")
+// const{genSaltSync,hashSync,compareSync}=require("bcrypt")
 const{sign}=require("jsonwebtoken")
 
 module.exports={
@@ -8,7 +8,7 @@ module.exports={
     createUser:(req,res)=>{
         const body=req.body;
         const password=req.body;
-        const salt=genSaltSync(10); 
+        // const salt=genSaltSync(10); 
         // body.password =hashSync(body.password, salt)
         create(body, (error,results)=>{
             if(error){
