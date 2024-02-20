@@ -1,4 +1,4 @@
-const pool =require('../../config/database')
+const pool =require('../db/connection')
 
 module.exports={
 createparticipant:(data,callBack)=>{

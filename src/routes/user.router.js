@@ -1,8 +1,5 @@
-const{createUser}=require("./user.controller")
-const{getUsers}=require("./user.controller")
-const{getUserByUserId}=require("./user.controller")
-const{updateUser}=require("./user.controller")
-const{deleteUser}=require("./user.controller")
+const{createUser,getUsers,getUserByUserId,updateUser,deleteUser}=require("../controllers/user.controller")
+
 const router =require("express").Router();
 
 router.post("/",createUser)

@@ -1,8 +1,6 @@
 const{createparticipant}=require("./participant.controller")
 const{getparticipant}=require("./participant.controller")
-const{getparticipantbyparticipantId}=require("./participant.controller")
-const{updateparticipant}=require("./participant.controller")
-const{deleteparticipant}=require("./participant.controller")
+const{getparticipantbyparticipantId ,updateparticipant ,deleteparticipant}=require("../controllers/participant.controller")
 const router =require("express").Router();
 
 router.post("/",createparticipant)

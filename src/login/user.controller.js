@@ -1,8 +1,5 @@
-const { getUsers } = require("./login.service");
-const {create} = require("./login.service")
-const {getUserByUserIds} = require("./login.service")
-const {updateUsers} = require("./login.service")
-const {deleteUser} = require("./login.service")
+const { getUsers ,create,getUserByUserIds ,updateUsers, deleteUser} = require("./login.service");
+
 // const bcrypt = require('bcryptjs');
 const{genSaltSync,hashSync,compareSync}=require("bcrypt")
 const{sign}=require("jsonwebtoken")

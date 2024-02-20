@@ -1,5 +1,4 @@
-const{createRole}=require("./role.controller")
-const{getRoles}=require("./role.controller")
+const{createRole ,getRoles}=require("../controllers/role.controller")
 const router =require("express").Router();
 
 router.post("/",createRole)
