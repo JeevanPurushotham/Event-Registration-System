@@ -1,5 +1,4 @@
-const{createparticipant}=require("./participant.controller")
-const{getparticipant}=require("./participant.controller")
+const{createparticipant ,getparticipant}=require("../controllers/participant.controller")
 const{getparticipantbyparticipantId ,updateparticipant ,deleteparticipant}=require("../controllers/participant.controller")
 const router =require("express").Router();
 
