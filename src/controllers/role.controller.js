@@ -1,5 +1,4 @@
-const { getRoles } = require("./role.service");
-const {create} = require("./role.service")
+const { getRoles,create } = require("../service/role.service");
 
 
 module.exports={

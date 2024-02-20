@@ -1,8 +1,5 @@
-const { getEvents} = require("./event.service");
-const {createEvent} = require("./event.service")
-const {getEventsByEventId} = require("./event.service")
-const {updateEvent} = require("./event.service")
-const {deleteEvent} = require("./event.service")
+const { getEvents,createEvent,getEventsByEventId,updateEvent,deleteEvent} = require("../service/event.service");
+
 // const bcrypt = require('bcryptjs');
 const{genSaltSync,hashSync,compareSync}=require("bcrypt")
 const{sign}=require("jsonwebtoken")

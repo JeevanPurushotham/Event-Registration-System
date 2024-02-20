@@ -1,8 +1,5 @@
-const { getparticipant } = require("./participant.service");
-const {createparticipant} = require("./participant.service")
-const {getparticipantByparticipantIds} = require("./participant.service")
-const {updateparticipant} = require("./participant.service")
-const {deleteparticipant} = require("./participant.service")
+const { getparticipant ,createparticipant,getparticipantByparticipantIds,updateparticipant,deleteparticipant} = require("../service/participant.service");
+
 // const bcrypt = require('bcryptjs');
 const{genSaltSync,hashSync,compareSync}=require("bcrypt")
 const{sign}=require("jsonwebtoken")

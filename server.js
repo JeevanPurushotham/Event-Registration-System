@@ -1,10 +1,10 @@
 const express = require("express");
 const app =express();
 
-const roleRouter = require("./api/roles/role.router")
-const userRouter = require("./api/Users/user.router")
-const eventRouter = require("./api/events/event.router")
-const participantRouter = require("./api/participants/participant.router")
+const roleRouter = require("./src/routes/role.router")
+const userRouter = require("./src/routes/user.router")
+const eventRouter = require("./src/routes/event.router")
+const participantRouter = require("./src/routes/participant.router")
 
 app.use(express.json());
 
